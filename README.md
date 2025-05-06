@@ -1,1 +1,35 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19281297&assignment_repo_type=AssignmentRepo)
+# 📰 News Aggregator API
+
+A Node.js + Express-based backend API for authenticating users, managing their news preferences (like categories and languages), and fetching personalized news articles from an external provider like GNews.
+
+---
+
+## 🚀 Features
+
+- User Registration and Login with JWT-based Authentication
+- Middleware to Protect Routes
+- User Preferences for News (Categories, Languages)
+- Integration with [GNews API](https://gnews.io/)
+- Input Validation using `express-validator`
+- Centralized Error Handling
+
+---
+
+## 🛠️ Tech Stack
+
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT for Authentication
+- Axios for External API Calls
+- express-validator for Validation
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/news-aggregator-api.git
+cd news-aggregator-api
+npm install
+```
