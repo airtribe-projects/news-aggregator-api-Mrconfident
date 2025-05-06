@@ -6,12 +6,17 @@ const app = express();
 app.use(express.json());
 const mongoose = require("mongoose");
 const users = require("./routes/users");
+const preferencesRouter = require("./routes/preferences");
+const newsRouter = require("./routes/news");
 
 app.get("/", (req, res) => {
   res.send("Hello11");
 });
 
 app.use("/users", users);
+
+app.use("/preferences", preferencesRouter);
+app.use("/news", newsRouter);
 
 mongoose
   .connect(MONGODB_URI)
